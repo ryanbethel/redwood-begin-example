@@ -4,8 +4,8 @@ begin-redwood
 @static
 folder web/dist
 
-@begin
-hydrate echo Skipping hydrate!
+#@begin
+#hydrate echo Skipping hydrate!
 
 @http
 /.redwood/functions/graphql

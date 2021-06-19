@@ -6,7 +6,7 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "yarn rw deploy netlify &&  npx zip-it-and-ship-it api/dist/functions begin/api/dist --archiveFormat none && cp begin/index.js begin/api/dist/functions/graphql"
+    "build:nobuild": "yarn rw deploy netlify &&  npx zip-it-and-ship-it api/dist/functions begin/api/dist --archiveFormat none && cp begin/index.js begin/api/dist/functions/graphql"
   },
   "devDependencies": {
     "@redwoodjs/core": "^0.33.3"
