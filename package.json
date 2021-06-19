@@ -6,7 +6,8 @@
     "packages/*"
   ],
   "devDependencies": {
-    "@redwoodjs/core": "^0.33.3"
+    "@redwoodjs/core": "^0.33.3",
+    "graphql-playground-middleware-lambda": "^1.7.23"
   },
   "eslintConfig": {
     "extends": "@redwoodjs/eslint-config"
@@ -14,5 +15,11 @@
   "engines": {
     "node": ">=14",
     "yarn": ">=1.15"
+  },
+  "dependencies": {
+    "@architect/architect": "^8.6.1",
+    "@architect/sandbox": "^3.6.0",
+    "@netlify/zip-it-and-ship-it": "^4.4.1",
+    "serverless": "^2.47.0"
   }
 }

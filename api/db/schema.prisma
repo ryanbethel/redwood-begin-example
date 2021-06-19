@@ -1,11 +1,12 @@
 datasource db {
-  provider = "sqlite"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
 generator client {
   provider      = "prisma-client-js"
-  binaryTargets = "native"
+  // output        = "./dist/prisma/generated/client"
+  binaryTargets = ["native", "rhel-openssl-1.0.x"]
 }
 
 // Define your own models here and run `yarn rw db save` to create
