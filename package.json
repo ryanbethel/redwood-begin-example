@@ -6,10 +6,14 @@
     "packages/*"
   ],
   "scripts": {
-    "build:nobuild": "yarn rw deploy netlify &&  npx zip-it-and-ship-it api/dist/functions begin/api/dist --archiveFormat none && cp begin/index.js begin/api/dist/functions/graphql"
+    "build": "yarn rw build &&  npx zip-it-and-ship-it api/dist/functions begin/dist/api/functions --archiveFormat none && cp begin/index.js begin/dist/api/functions/graphql/"
   },
   "devDependencies": {
-    "@redwoodjs/core": "^0.33.3"
+    "@architect/architect": "^8.6.0",
+    "@architect/sandbox": "^3.6.0",
+    "@netlify/zip-it-and-ship-it": "^4.4.1",
+    "@redwoodjs/core": "^0.33.3",
+    "yarn": "^1.22.10"
   },
   "eslintConfig": {
     "extends": "@redwoodjs/eslint-config"
@@ -18,10 +22,5 @@
     "node": ">=14",
     "yarn": ">=1.15"
   },
-  "dependencies": {
-    "@architect/sandbox": "^3.6.0",
-    "@netlify/zip-it-and-ship-it": "^4.4.1",
-    "serverless": "^2.47.0",
-    "yarn": "^1.22.10"
-  }
+  "dependencies": {}
 }

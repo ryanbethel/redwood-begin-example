@@ -7,6 +7,7 @@ generator client {
   provider      = "prisma-client-js"
   // output        = "./dist/prisma/generated/client"
   binaryTargets = ["native", "rhel-openssl-1.0.x"]
+  // binaryTargets = env("BINARY_TARGET")
 }
 
 // Define your own models here and run `yarn rw db save` to create
