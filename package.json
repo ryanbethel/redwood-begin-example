@@ -16,7 +16,5 @@
     "url": "https://github.com/ryanbethel/redwood-begin-example/issues"
   },
   "homepage": "https://github.com/ryanbethel/redwood-begin-example#readme",
-  "devDependencies": {
-    "yarn": "^1.22.10"
-  }
+  "devDependencies": {}
 }
