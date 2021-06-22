@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "workspaces": [
+    "api",
+    "web",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "yarn rw build &&  npx zip-it-and-ship-it api/dist/functions begin/dist/api/functions --archiveFormat none && cp begin/index.js begin/dist/api/functions/graphql/"
+  },
+  "devDependencies": {
+    "@redwoodjs/core": "^0.33.3"
+  },
+  "eslintConfig": {
+    "extends": "@redwoodjs/eslint-config"
+  },
+  "engines": {
+    "node": ">=14",
+    "yarn": ">=1.15"
+  },
+  "dependencies": {}
+}

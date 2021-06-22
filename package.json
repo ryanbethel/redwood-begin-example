@@ -1,26 +1,22 @@
 {
-  "private": true,
-  "workspaces": [
-    "api",
-    "web",
-    "packages/*"
-  ],
+  "name": "redwood-example-todo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "build": "yarn rw build &&  npx zip-it-and-ship-it api/dist/functions begin/dist/api/functions --archiveFormat none && cp begin/index.js begin/dist/api/functions/graphql/"
+    "build:no": "cd redwood && npx yarn"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanbethel/redwood-begin-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryanbethel/redwood-begin-example/issues"
+  },
+  "homepage": "https://github.com/ryanbethel/redwood-begin-example#readme",
   "devDependencies": {
-    "@architect/architect": "^8.6.0",
-    "@architect/sandbox": "^3.6.0",
-    "@netlify/zip-it-and-ship-it": "^4.4.1",
-    "@redwoodjs/core": "^0.33.3",
     "yarn": "^1.22.10"
-  },
-  "eslintConfig": {
-    "extends": "@redwoodjs/eslint-config"
-  },
-  "engines": {
-    "node": ">=14",
-    "yarn": ">=1.15"
-  },
-  "dependencies": {}
+  }
 }
